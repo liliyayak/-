@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Для Дайко💗</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Marck+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  color: #874d68;
+  background: linear-gradient(135deg, #fff0f5, #ffe0eb, #fff7fa);
+  text-align: center;
+}
+
+header {
+  padding: 75px 20px 60px;
+  background: linear-gradient(135deg, #f7b8d0, #fbd9e7, #f5b5cf);
+  border-radius: 0 0 45px 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-family: 'Marck Script', cursive;
+  font-size: clamp(48px, 10vw, 75px);
+  color: white;
+  margin: 10px;
+  text-shadow: 2px 3px 8px #d98eae;
+}
+
+header p {
+  color: white;
+  font-size: 17px;
+}
+
+.decor {
+  font-size: 30px;
+  margin: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-10px) rotate(8deg); }
+}
+
+section {
+  max-width: 950px;
+  margin: 35px auto;
+  padding: 25px 18px;
+}
+
+.card {
+  background: rgba(255,255,255,0.8);
+  border: 2px solid #f8d0df;
+  border-radius: 28px;
+  padding: 28px 20px;
+  box-shadow: 0 8px 25px #e9a9c533;
+}
+
+h2 {
+  font-family: 'Marck Script', cursive;
+  font-size: 42px;
+  color: #d77da3;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+button {
+  border: none;
+  background: #e99bb9;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 12px;
+  box-shadow: 0 5px 12px #d98eae55;
+}
+
+button:active {
+  transform: scale(.97);
+}
+
+#letter {
+  display: none;
+  margin-top: 20px;
+  padding: 22px;
+  border-radius: 20px;
+  background: #fff0f5;
+  line-height: 1.9;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.photo {
+  background: white;
+  padding: 9px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #d98eae33;
+}
+
+.photo img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.photo p {
+  margin: 10px 0 3px;
+  font-size: 13px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 18px;
+  background: #f7dce7;
+}
+
+footer {
+  padding: 40px 15px;
+  color: #c47a99;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 20px;
+  animation: rise 7s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 650px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="decor">🎀 🌸 💗 🌷</div>
+  <h1>С днём рождения😘</h1>
+  <p>Маленькое поздравление от всей души🤙🏼💕</p>
+  <div class="decor">🦢 ✨ 🩷 ✨ 🦢</div>
+</header>
+
+<section>
+  <div class="card">
+    <h2> Тебе уже 21, а я помню тебя еще 17-летней?🥹</h2>
+    <p class="message">
+      💗<br>
+      Бағарабын бүппэт дьолу, элбэх кыһыл харчыны,
+      үөрүүнү-көтүүнү, чугас дьонун наар аттыгар буоллуннар,
+      доруобуйаны☝🏼<br>
+      Хас биир күнүн тапталынан, үөрүүннэн, сылааһынан,
+      дьоллоох түгэннэринэн туоллун😘
+      Маннык курдук күлэ-үөрэ, ыарахаттарга улаханнык наадыйбакка,
+      интириэһинэй кэпсээннэргинэн олохпутун киэргэтэ сырыт❤️
+    </p>
+    <div class="decor">🌸 💌 🌸</div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Маны баттыаххын наада быһылаах💌</h2>
+    <p>Бэйэм да сүгүн быһаарса иликпин...</p>
+    <button onclick="showLetter()">Бу🎀</button>
+
+    <div id="letter">
+      2023 сылтан сагалаан чугас доғор буолбуккар махтанабын🫶🏼
+      Эйигин кытта буолбут түгэннэр сүрэхпэр наар сырдыгынан, сылааһынан,
+      үөрүүннэн эрэ өйдөнөн хаалыахтара🫂
+      Таптыыбын, убаастыыбын, сыаналыыбын😘
+      Ты заслуживаешь всего самого прекрасного!
+      <br><br>
+      С любовью, Лило🌷
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Наши воспоминания📸</h2>
+  <p>Маленькая коллекция особенных моментов💕</p>
+
+  <div class="gallery">
+    <div class="photo"><img src="foto1.jpg" alt="Фото 1"><p>Моменты счастья 💗</p></div>
+    <div class="photo"><img src="foto2.jpg" alt="Фото 2"><p>Такие воспоминания 🌸</p></div>
+    <div class="photo"><img src="foto3.jpg" alt="Фото 3"><p>Улыбайся чаще 🎀</p></div>
+    <div class="photo"><img src="foto4.jpg" alt="Фото 4"><p>Наши моменты 🩷</p></div>
+    <div class="photo"><img src="foto5.jpg" alt="Фото 5"><p>Самые тёплые дни 🌷</p></div>
+    <div class="photo"><img src="foto6.jpg" alt="Фото 6"><p>Всё самое лучшее ✨</p></div>
+    <div class="photo"><img src="foto7.jpg" alt="Фото 7"><p>Прекрасные воспоминания 💌</p></div>
+    <div class="photo"><img src="foto8.jpg" alt="Фото 8"><p>Маленькое счастье 🦢</p></div>
+    <div class="photo"><img src="foto9.jpg" alt="Фото 9"><p>Навсегда в памяти 💕</p></div>
+    <div class="photo"><img src="foto10.jpg" alt="Фото 10"><p>Ещё один прекрасный момент 🌸</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Видео-воспоминания🎞️</h2>
+  <p>Пять маленьких кусочков счастья💗
+  Наһаа ваниль дии санаама сорох нууччалыы
+  туох джипити ити🤣</p>
+
+  <div class="videos">
+    <video controls playsinline><source src="video1.mp4" type="video/mp4"></video>
+    <video controls playsinline><source src="video2.mp4" type="video/mp4"></video>
+    <video controls playsinline><source src="video3.mp4" type="video/mp4"></video>
+    <video controls playsinline><source src="video4.mp4" type="video/mp4"></video>
+    <video controls playsinline><source src="video5.mp4" type="video/mp4"></video>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2>Дабылыанньа уонна сис ыарыыта диэни билимэ🎂</h2>
+    <p class="message">
+      Пусть твоя жизнь будет такой же красивой,
+      как этот маленький розовый мир! 🎀
+    </p>
+    <div class="decor">💗 🌷 🦢 🌸 💗</div>
+  </div>
+</section>
+
+<footer>
+  Харчым на подарок нету,но есть желание хоть как-то сделать приятно🤣<br>
+  2026
+</footer>
+
+<script>
+function showLetter() {
+  const letter = document.getElementById('letter');
+  letter.style.display =
+    letter.style.display === 'block' ? 'none' : 'block';
+}
+
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.textContent = ['💗', '💕', '🌸', '🎀'][Math.floor(Math.random() * 4)];
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 1000);
+</script>
+
+</body>
+</html>
