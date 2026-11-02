@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для Дайко 😘</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #fff0f5;
+  color: #a64d70;
+  text-align: center;
+}
+header {
+  padding: 65px 20px;
+  background: linear-gradient(135deg,#ffd6e7,#fff0f5,#f9d5e5);
+}
+h1 { font-size: 38px; }
+h2 { color: #bd6689; }
+p { line-height: 1.8; }
+button {
+  background: #e99ab9;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 16px;
+  margin: 10px;
+}
+section { padding: 35px 15px; }
+.card {
+  background: white;
+  border-radius: 22px;
+  padding: 20px;
+  margin: 18px auto;
+  max-width: 500px;
+  box-shadow: 0 5px 20px #e9b5ca55;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 600px;
+  margin: auto;
+}
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+video {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 12px;
+}
+#letter { display: none; }
+footer { padding: 35px; }
+</style>
+</head>
+<body>
+<header>
+  <div style="font-size:35px">🎀 🌷 🎀</div>
+  <h1>Для Дайко 💗</h1>
+  <p>У меня для тебя кое-что особенное инда маленькое но от всей души ...</p>
+  <button onclick="document.getElementById('greeting').scrollIntoView({behavior:'smooth'})">
+    Нажимать сюда 💌
+  </button>
+</header>
+<section id="greeting">
+  <div class="card">
+    <h1> Тебе уже 21 🎂</h1>
+    <p>
+      Очень люблю, ценю, уважаю, обнимаю 😘
+    </p>
+    <p>Тебе уже 21, а я помню тебя еще 17-летней?🥹 💗</p>
+  </div>
+</section>
+<section>
+  <h2>💌 Секретное письмо</h2>
+  <button onclick="document.getElementById('letter').style.display='block'">
+    Открыть 🎀
+  </button>
+  <div class="card" id="letter">
+    <h2>О Дайаана Дайаана 💪🏽</h2>
+    <p>
+      Спасибо за все наши моменты, разговоры,
+      смех и воспоминания.
+  
+      Надеюсь, впереди нас ждёт ещё
+      множество веселых рассказов твоих!
+    </p>
+    <p>Крепко ценю нашу дружбу! 💗</p>
+  </div>
+</section>
+<section>
+  <h2>📸 Наши воспоминания</h2>
+  <p>Маленькая коллекция счастливых моментов</p>
+  <div class="gallery">
+    <img src="foto1.jpg" alt="Наше воспоминание">
+    <img src="foto2.jpg" alt="Наше воспоминание">
+    <img src="foto3.jpg" alt="Наше воспоминание">
+    <img src="foto4.jpg" alt="Наше воспоминание">
+    <img src="foto5.jpg" alt="Наше воспоминание">
+    <img src="foto6.jpg" alt="Наше воспоминание">
+  </div>
+</section>
+<section>
+  <h2>🎥 Наши видео</h2>
+  <div class="card">
+    <video controls playsinline>
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+    <video controls playsinline>
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+<footer>
+  <h2>С любовью, от души для тебя 💗</h2>
+  <div style="font-size:30px">🎀 🌸 🦢 🌷 💗</div>
+  <p>Ты заслуживаешь самого прекрасного!</p>
+</footer>
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    window.open(img.src, '_blank');
+  });
+});
+</script>
+</body>
+</html>
