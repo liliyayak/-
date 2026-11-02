@@ -176,6 +176,13 @@ footer {
 
 <header>
   <div class="decor">🎀 🌸 💗 🌷</div>
+  <button onclick="toggleMusic()" id="musicButton">
+  🎵 Включить музыку
+</button>
+
+<audio id="backgroundMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
   <h1>С днём рождения😘</h1>
   <p>Маленькое поздравление от всей души🤙🏼💕</p>
   <div class="decor">🦢 ✨ 🩷 ✨ 🦢</div>
@@ -284,6 +291,18 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1000);
+  function toggleMusic() {
+  const music = document.getElementById('backgroundMusic');
+  const button = document.getElementById('musicButton');
+
+  if (music.paused) {
+    music.play();
+    button.textContent = '💗 Выключить музыку';
+  } else {
+    music.pause();
+    button.textContent = '🎵 Включить музыку';
+  }
+}
 </script>
 
 </body>
